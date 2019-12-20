@@ -1,3 +1,12 @@
 [submodule "itemservice"]
 	path = itemservice
 	url = https://github.com/Cherkasik/itemservice
+[submodule "paymentservice"]
+	path = paymentservice
+	url = https://github.com/Ogurecher/Payment_Service
+[submodule "orderservice"]
+	path = orderservice
+	url = https://github.com/slobodaPolina/OrderService/
+[submodule "gateway"]
+	path = gateway
+	url = https://github.com/Glosus/Gateway

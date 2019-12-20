@@ -1,0 +1,3 @@
+[submodule "itemservice"]
+	path = itemservice
+	url = https://github.com/Cherkasik/itemservice

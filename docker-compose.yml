@@ -56,4 +56,4 @@ services:
       - payment-service
       - order-service
     ports:
-      - 1810:1810
+      - 8000:8000

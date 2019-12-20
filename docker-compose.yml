@@ -4,8 +4,6 @@ services:
   itemdb:
     build: ./itemservice/Database
     image: itemdb
-    ports:
-      - 5430:5432
   item-service:
     build: ./itemservice
     image: itemservice
@@ -13,17 +11,11 @@ services:
     depends_on:
       - itemdb
       - rabbitmq
-    ports:
-      - 1824:1824
   rabbitmq:
     image: rabbitmq
-    ports:
-      - 15672:15672
   paymentdb:
     build: ./paymentservice/Database
     image: paymentdb
-    ports:
-      - 5431:5432
   payment-service:
     build: ./paymentservice
     image: paymentservice
@@ -31,13 +23,9 @@ services:
     depends_on:
       - paymentdb
       - rabbitmq
-    ports:
-      - 1810:1810
   orderdb:
     build: ./orderservice/Database
     image: orderdb
-    ports:
-      - 5432:5432
   order-service:
     build: ./orderservice
     image: orderservice
@@ -45,8 +33,6 @@ services:
     depends_on:
       - orderdb
       - rabbitmq
-    ports:
-      - 1809:1809
   gateway:
     build: ./gateway
     image: gateway
